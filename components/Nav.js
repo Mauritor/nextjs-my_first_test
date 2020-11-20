@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Nav() {
+export default function Nav(props) {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -10,17 +10,17 @@ export default function Nav() {
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
                             <Link href="/">
-                                <a className="nav-link">Home</a>
+                                <a className={props.statusHome + " nav-link"}>Home</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/test">
-                                <a className="nav-link">Test</a>
+                                <a className={props.statusTest + " nav-link"}>Test</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link href="/about">
-                                <a className="nav-link">About</a>
+                                <a className={props.statusAbout + " nav-link"}>About</a>
                             </Link>
                         </li>
                     </ul>

@@ -5,7 +5,7 @@ const about = () => {
     return (
         <>
             <MyHead />
-            <Nav />
+            <Nav statusAbout={'text-warning'}/>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12">

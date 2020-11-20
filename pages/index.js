@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <MyHead />
-      <Nav />
+      <Nav statusHome={'text-warning'}/>
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
