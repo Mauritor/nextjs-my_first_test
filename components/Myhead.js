@@ -4,7 +4,8 @@ export default function Myhead() {
     return (
         <>
             <Head>
-                <title>Create Next App</title>
+                <meta charset="utf-8" />
+                <title>Next.js - Test</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://bootswatch.com/4/spacelab/bootstrap.min.css" />
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
