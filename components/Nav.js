@@ -23,6 +23,11 @@ export default function Nav(props) {
                                 <a className={props.statusAbout + " nav-link"}>About</a>
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link href="/users">
+                                <a className={props.statusUsers + " nav-link"}>Users</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

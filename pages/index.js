@@ -10,7 +10,19 @@ export default function Home() {
       <Nav statusHome={'text-primary'} />
       <Layout>
         <h1 className="text-primary my-5">Home</h1>
-        <p className="text-light blockquote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium fugit itaque assumenda, eaque blanditiis velit, ratione iste culpa quas ex et quasi. Ad, ipsum expedita explicabo eveniet modi delectus!</p>
+        <p className="blockquote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium fugit itaque assumenda, eaque blanditiis velit, ratione iste culpa quas ex et quasi. Ad, ipsum expedita explicabo eveniet modi delectus!</p>
+
+        <style jsx>
+          {`
+          p{
+            color: grey;
+          }
+          p:hover{
+            color: white;
+          }
+            `
+          }
+        </style>
       </Layout>
     </>
   )
