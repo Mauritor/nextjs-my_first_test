@@ -1,4 +1,5 @@
 //import styles from '../styles/Home.module.css'
+import Layout from '../components/Layout';
 import MyHead from '../components/Myhead';
 import Nav from '../components/Nav'
 
@@ -6,14 +7,11 @@ export default function Home() {
   return (
     <>
       <MyHead />
-      <Nav statusHome={'text-warning'}/>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12">
-            <h1 className="text-primary my-5">Home</h1>
-          </div>
-        </div>
-      </div>
+      <Nav statusHome={'text-primary'} />
+      <Layout>
+        <h1 className="text-primary my-5">Home</h1>
+        <p className="text-light blockquote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium fugit itaque assumenda, eaque blanditiis velit, ratione iste culpa quas ex et quasi. Ad, ipsum expedita explicabo eveniet modi delectus!</p>
+      </Layout>
     </>
   )
 }

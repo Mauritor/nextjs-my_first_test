@@ -1,6 +1,7 @@
 import MyHead from '../components/Myhead';
 import Nav from '../components/Nav';
-import React from 'react'
+import Layout from '../components/Layout'
+
 
 /*export async function getStaticsProps(ctx) {
     const res = await fetch('http://jsonplaceholder.typicode.com/users')
@@ -12,32 +13,29 @@ import React from 'react'
     }
 }*/
 
-const test = ({data}) => {
+const test = ({ data }) => {
     //console.log(data);
     return (
         <>
             <MyHead />
-            <Nav statusTest={'text-warning'} />
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12">
-                        <h1 className="text-primary my-5">Test</h1>
-                        {
-                             data.map(user => (
-                             <p key={user.id}>{user.username}</p>
-                             ))
-                         }
-                    </div>
-                </div>
-            </div>
+            <Nav statusTest={'text-primary'} />
+            <Layout >
+                <h1 className="text-primary my-5">Test</h1>
+                {
+                    data.map(user => (
+                        <p key={user.id}>{user.username}</p>
+                    ))
+                }
+            </Layout>    
         </>
+            
     )
 }
 
 test.getInitialProps = async (ctx) => {
     const res = await fetch('http://jsonplaceholder.typicode.com/users')
     const data = await res.json();
-    return {data}
- }
+    return { data}
+}
 
 export default test

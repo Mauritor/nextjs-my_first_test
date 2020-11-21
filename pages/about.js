@@ -1,3 +1,4 @@
+import Layout from '../components/Layout';
 import MyHead from '../components/Myhead';
 import Nav from '../components/Nav';
 
@@ -5,14 +6,10 @@ const about = () => {
     return (
         <>
             <MyHead />
-            <Nav statusAbout={'text-warning'}/>
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12">
-                        <h1 className="text-primary my-5">About</h1>
-                    </div>
-                </div>
-            </div>
+            <Nav statusAbout={'text-primary'} />
+            <Layout>
+                <h1 className="text-primary my-5">About us</h1>
+            </Layout>
         </>
     )
 }
