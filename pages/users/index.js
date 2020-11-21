@@ -17,13 +17,17 @@ const Users = ({ data }) => {
                     data.map(item => {
                         //console.log(item.id);
                         return (
-                            <div className="card bg-dark mb-1">
-                                <div className="card-header text-center">
-                                    <Link key={item.id} href={`/users/[id]`} as={`/users/${item.id}`}>
-                                        <a>{item.username}</a>
-                                    </Link>
-                                </div>
-                            </div>
+
+                            <Link key={item.id} href={`/users/[id]`} as={`/users/${item.id}`}>
+                                <a>
+                                    <div className="card bg-dark mb-1">
+                                        <div className="card-header text-center">
+                                            {item.username}
+                                        </div>
+                                    </div>
+                                </a>
+                            </Link>
+
                         )
                     }
 
