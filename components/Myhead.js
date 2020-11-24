@@ -6,6 +6,8 @@ export default function Myhead() {
             <Head>
                 <meta charset="utf-8" />
                 <meta name="google" content="notranslate" />
+                <meta name="description" content="Probando Next.js por primera vez. creando componentes y pages con server side rendering"/>
+                <title>First-Test-Nextjs</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://bootswatch.com/4/spacelab/bootstrap.min.css" />
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
