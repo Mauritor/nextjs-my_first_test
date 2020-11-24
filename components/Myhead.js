@@ -6,6 +6,7 @@ export default function Myhead() {
             <Head>
                 <meta charset="utf-8" />
                 <meta name="google" content="notranslate" />
+                <meta name="robots" content="noindex"/>
                 <meta name="description" content="Probando Next.js por primera vez. creando componentes y pages con server side rendering"/>
                 <title>First-Test-Nextjs</title>
                 <link rel="icon" href="/favicon.ico" />
