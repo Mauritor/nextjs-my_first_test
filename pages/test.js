@@ -2,6 +2,7 @@ import MyHead from '../components/Myhead';
 import Nav from '../components/Nav';
 import Layout from '../components/Layout'
 import { useState } from 'react';
+import Gallery from '../components/Gallery'
 
 
 const test = () => {
@@ -57,6 +58,7 @@ const test = () => {
                             }
                         </div>
                     </div>
+                    <Gallery />
                 </div>
             </div>
 
