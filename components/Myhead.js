@@ -4,7 +4,7 @@ export default function Myhead() {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                
                 <meta name="google" content="notranslate" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://bootswatch.com/4/spacelab/bootstrap.min.css" />
